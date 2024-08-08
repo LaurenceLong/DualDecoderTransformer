@@ -7,7 +7,8 @@ from tqdm import tqdm
 from model import DualDecoderTransformer
 
 # 设置设备
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+dev_name = "cuda" if torch.cuda.is_available() else "cpu"
+device = torch.device(dev_name)
 
 
 class TrainingArgs:
