@@ -4,7 +4,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 
-from model import DualDecoderTransformer
+from history.model import DualDecoderTransformer
 
 # 设置设备
 dev_name = "cuda" if torch.cuda.is_available() else "cpu"
